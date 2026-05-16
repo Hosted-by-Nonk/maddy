@@ -6,7 +6,7 @@ FROM alpine:3.23
 
 RUN set -ex && \
     apk upgrade --no-cache --available && \
-    apk --no-cache add bash gopass
+    apk --no-cache add bash gopass gnupg
 
 COPY --from=maddy /bin/maddy /bin/maddy
 
