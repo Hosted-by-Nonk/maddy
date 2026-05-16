@@ -6,7 +6,7 @@ FROM alpine:3.23
 
 RUN set -ex && \
     apk upgrade --no-cache --available && \
-    apk --no-cache add bash gopass gnupg
+    apk --no-cache add bash gopass gnupg openssh-client
 
 COPY --from=maddy /bin/maddy /bin/maddy
 
