@@ -2,7 +2,7 @@ ARG MADDY_VERSION
 
 FROM ghcr.io/foxcpp/maddy:${MADDY_VERSION} AS maddy
 
-FROM alpine:3.23
+FROM alpine:3.24
 
 RUN set -ex && \
     apk upgrade --no-cache --available && \
